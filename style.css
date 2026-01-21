@@ -1,0 +1,130 @@
+:root {
+    --pink: #f6c1cc;
+    --purple: #d9c6f0;
+    --blue: #cde7f0;
+    --green: #dff1e3;
+    --dark: #4a4a4a;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, var(--blue), var(--purple));
+    color: var(--dark);
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.8));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    background: var(--white);
+    padding: 60px 40px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    animation: fadeUp 1.5s ease;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    color: #6b4ca5;
+}
+
+.hero h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.hero p {
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+/* SECTION */
+.section {
+    padding: 80px 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.section h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* PROFILE */
+.profile {
+    background: var(--green);
+    border-radius: 40px 40px 0 0;
+}
+
+/* ACHIEVEMENT */
+.achievement .card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.badge {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, var(--pink), var(--purple));
+    color: white;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* PRAYER */
+.prayer {
+    background: linear-gradient(135deg, var(--purple), var(--pink));
+    color: white;
+    border-radius: 40px 40px 0 0;
+}
+
+/* FOOTER */
+footer {
+    padding: 30px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    background: #fafafa;
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+}
